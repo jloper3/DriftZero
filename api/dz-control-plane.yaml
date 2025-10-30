@@ -1,0 +1,32 @@
+openapi: 3.1.0
+info:
+  title: DriftZero Control Plane API
+  version: 0.1.0
+  description: |
+    DriftZero (EnvSecOps) control plane API.
+    Used by dzctl, CI/CD runners, AI agents, and IDE extensions to:
+    - attest execution environments
+    - request scoped credentials
+    - query audit events
+paths:
+  /attest:
+    post:
+      summary: Attest current execution environment
+      operationId: postAttest
+      responses:
+        '200':
+          description: OK
+  /credentials/request:
+    post:
+      summary: Request scoped credentials
+      operationId: postCredentialsRequest
+      responses:
+        '200':
+          description: OK
+  /audit/events:
+    get:
+      summary: Query audit log events
+      operationId: getAuditEvents
+      responses:
+        '200':
+          description: OK

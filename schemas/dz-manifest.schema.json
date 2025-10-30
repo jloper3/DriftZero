@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "dz-manifest",
+  "type": "object",
+  "properties": {
+    "manifest_id": {"type": "string"},
+    "manifest_version": {"type": "string"},
+    "manifest_hash": {"type": "string"}
+  },
+  "required": ["manifest_id", "manifest_version"]
+}
